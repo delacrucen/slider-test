@@ -19,11 +19,11 @@ body {
 .left,
 .right {
   position: absolute;
-  color: red;
+  color: white;
   font-size: 32px;
   height: 50px;
   width: 50px;
-  border: 1px solid black;
+  background-color: green;
   border-radius: 50%;
   top: 50px;
   cursor: pointer;
@@ -54,9 +54,6 @@ body {
 
 /* content */
 .slider__content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
   position: relative;
   top: 10px;
   left: 100px;
@@ -68,7 +65,10 @@ body {
 .content {
   width: 150px;
   height: 300px;
-  background-color: orange;
+  position: absolute;
+  margin-top: 50px;
+  left: 200px;
+  transition: all 0.3s;
 }
 
 /* states */
@@ -80,4 +80,55 @@ body {
 
 .product-active {
   background-color: aqua;
+}
+
+@keyframes fromRight {
+  0% {
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    right: 185px;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+@keyframes fromLeft {
+  0% {
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    left: 200px;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
+.al {
+  animation: fromLeft 0.5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+.ar {
+  animation: fromRight 0.5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+.apple {
+  background-color: red;
+}
+
+.orange {
+  background-color: rgb(255, 187, 0);
+}
+
+.pear {
+  background-color: rgb(238, 255, 0);
+}
+
+.grape {
+  background-color: rgb(41, 1, 77);
 }

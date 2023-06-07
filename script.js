@@ -45,3 +45,72 @@ function changeActive(index) {
     );
   }
 }
+
+const content = document.querySelectorAll(".content");
+//content slider
+buttonRight.addEventListener("click", () => {
+  console.log(currentIndex);
+  // if(currentIndex ==){}
+  switch (currentIndex) {
+    case 0:
+      content[0].className = "content al apple";
+      content[1].className = "content";
+      content[2].className = "content";
+      content[3].className = "content";
+      break;
+    case 1:
+      content[0].className = "content";
+      content[1].className = "content al orange";
+      content[2].className = "content";
+      content[3].className = "content";
+      break;
+    case 2:
+      content[0].className = "content";
+      content[1].className = "content";
+      content[2].className = "content al pear";
+      content[3].className = "content";
+      break;
+    case 3:
+      content[0].className = "content";
+      content[1].className = "content";
+      content[2].className = "content";
+      content[3].className = "content al grape";
+      break;
+    default:
+      break;
+  }
+});
+
+//to left
+buttonLeft.addEventListener("click", () => {
+  console.log(currentIndex);
+  // if(currentIndex ==){}
+  switch (currentIndex) {
+    case 0:
+      content[0].className = "content ar apple";
+      content[1].className = "content";
+      content[2].className = "content";
+      content[3].className = "content";
+      break;
+    case 1:
+      content[0].className = "content";
+      content[1].className = "content ar orange";
+      content[2].className = "content";
+      content[3].className = "content";
+      break;
+    case 2:
+      content[0].className = "content";
+      content[1].className = "content";
+      content[2].className = "content ar pear";
+      content[3].className = "content";
+      break;
+    case 3:
+      content[0].className = "content";
+      content[1].className = "content";
+      content[2].className = "content";
+      content[3].className = "content ar grape";
+      break;
+    default:
+      break;
+  }
+});
