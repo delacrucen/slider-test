@@ -58,8 +58,6 @@ body {
   top: 10px;
   left: 100px;
   margin-bottom: 15px;
-  height: auto;
-  width: 500px;
 }
 
 .content {
@@ -67,7 +65,7 @@ body {
   height: 300px;
   position: absolute;
   margin-top: 50px;
-  left: 200px;
+  left: 120px;
   transition: all 0.3s;
 }
 
@@ -89,7 +87,7 @@ body {
     visibility: hidden;
   }
   100% {
-    right: 185px;
+    right: 500px;
     opacity: 1 !important;
     visibility: visible !important;
   }
@@ -101,7 +99,7 @@ body {
     visibility: hidden;
   }
   100% {
-    left: 200px;
+    left: 120px;
     opacity: 1 !important;
     visibility: visible !important;
   }
